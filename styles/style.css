@@ -4,6 +4,8 @@
 /* base styles */
 body {
   font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: rgba(128, 128, 128, 0.05);
 }
 
 .link-btn {
@@ -27,12 +29,17 @@ body {
 .flex-container {
   display: flex;
 }
+.header-title {
+  justify-content: space-between;
+}
 
 .header-title a {
   margin-left: 156px;
 }
 
 .header-title h1 {
+  height: 230px;
+  width: 230px;
   font-size: 64px;
   font-weight: 700;
   color: white;
@@ -50,6 +57,37 @@ body {
 }
 
 /* main section style */
+/* players section style */
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 330px);
+  grid-gap: 30px;
+  margin: 70px 15%;
+  justify-content: center;
+}
+/* player section style */
+.player {
+  height: 444px;
+  width: 300px;
+  padding: 15px;
+  background-color: white;
+  box-shadow: 2px 2px 5px 5px rgba(128, 128, 128, 0.2);
+}
+.player img {
+  height: 256px;
+  width: 300px;
+  object-fit: fill;
+}
+.player h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 16px 0 10px 0;
+}
+.player p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+}
 /* footer section style */
 
 /* Media Query */
