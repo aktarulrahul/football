@@ -85,10 +85,49 @@ body {
 }
 .player p {
   margin: 0;
+  color: #6c6c6c;
   font-size: 16px;
   font-weight: 400;
+  line-height: 26px;
 }
 /* footer section style */
+.footer-container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 63px;
+}
+.footer-image img {
+  width: 484px;
+  height: 110px;
+}
+
+.footer-icons {
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.social-icon a {
+  text-decoration: none;
+}
+
+.fab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: grey;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(128, 128, 128, 0.24);
+  margin: 0 7px;
+}
+
+.copy-right {
+  font-size: 18px;
+  font-weight: 400;
+}
 
 /* Media Query */
 /* For Tablet Screen */
