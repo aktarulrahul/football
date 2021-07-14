@@ -236,26 +236,29 @@ nav ul li {
 }
 
 .footer-icons {
+  display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px 0;
 }
-
-.social-icon a {
-  text-decoration: none;
-}
-
-.fab {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
-  color: grey;
-  width: 30px;
-  height: 30px;
+.social-icon {
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   background-color: rgba(128, 128, 128, 0.24);
   margin: 0 7px;
+}
+
+.social-icon a {
+  text-decoration: none;
+  /* padding: 1%; */
+}
+
+.fab {
+  color: grey;
+  width: 16px;
+  height: 13px;
+  padding: 25% 0 0 25%;
 }
 
 .copy-right {
