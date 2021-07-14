@@ -291,6 +291,9 @@ For Tablet Screen 688px to 992px
     height: 260px;
     margin: 100px 16px;
   }
+  .header:hover .header-title a {
+    animation: none;
+  }
   /* Player Section */
   .players {
     grid-template-columns: repeat(2, 330px);
