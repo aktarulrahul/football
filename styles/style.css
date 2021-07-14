@@ -153,6 +153,27 @@ nav ul li {
   font-weight: 400;
   line-height: 26px;
 }
+
+/* Photo Galary */
+.photo-galary h2 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+}
+.photoes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  width: 90%;
+  justify-content: center;
+  margin: 5%;
+}
+.photo {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  box-shadow: 2px 2px 5px 5px rgba(128, 128, 128, 0.2);
+  margin: 5%;
+}
 /* footer section style */
 .footer-container {
   flex-direction: column;
@@ -199,17 +220,17 @@ Media Query
 For Tablet Screen 688px to 992px
 ---------------------------------------------------------- */
 @media screen and (min-width: 688px) and (max-width: 992px) {
-  .header{
+  /* Header Section */
+  .header {
     height: 600px;
   }
-  .header-title{
+  .header-title {
     margin-left: 0;
     padding-left: -100px;
   }
   .header-title h1 {
     font-size: 48px;
     line-height: 60px;
-    
   }
 
   .header-image img {
@@ -217,15 +238,11 @@ For Tablet Screen 688px to 992px
     height: 260px;
     margin: 100px 16px;
   }
+  /* Player Section */
   .players {
     grid-template-columns: repeat(2, 330px);
     grid-gap: 30px;
     margin: 70px 10px 0 0;
-  }
-
-
-  footer {
-    
   }
 }
 /* ----------------------------------------------------------
@@ -233,16 +250,7 @@ for Phone screen min screen size 688px
 ---------------------------------------------------------- */
 @media screen and (max-width: 688px) {
   /* header section style */
-  /* .link-btn {
-    text-decoration: none;
-    height: 44px;
-    width: 168px;
-    padding: 10px 24px;
-    color: white;
-    background-color: #e02c6d;
-    font-size: 16px;
-    font-weight: 500px;
-  } */
+
   .flex-container {
     flex-direction: column;
   }
@@ -300,4 +308,5 @@ for Phone screen min screen size 688px
   .footer-icons {
     flex-direction: row;
     justify-content: space-between;
+  }
 }
