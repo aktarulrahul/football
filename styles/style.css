@@ -154,6 +154,55 @@ nav ul li {
   line-height: 26px;
 }
 
+/* Next Match */
+.match-section {
+  width: 100%;
+  height: 350px;
+  background-image: linear-gradient(to right, #68a7dd, #079548);
+  background-size: cover;
+  box-shadow: 2px 2px 5px 5px rgba(128, 128, 128, 0.2);
+}
+.match-section h2 {
+  font-size: 48px;
+  line-height: 40px;
+  font-weight: 700;
+  padding-top: 2%;
+  text-align: center;
+}
+.match {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.team-1,
+.team-2 {
+  font-size: 96px;
+  font-weight: 700;
+}
+.vs {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  align-items: center;
+}
+.vs .time {
+  margin: 2% 0;
+  font-size: 48px;
+  font-weight: 500;
+}
+.vs .text {
+  font-size: 48px;
+  font-weight: 500;
+}
+.vs .text span {
+  display: inline;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
 /* Photo Galary */
 .photo-galary h2 {
   text-align: center;
@@ -296,6 +345,21 @@ for Phone screen min screen size 688px
   .players {
     margin-top: 47px;
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* match section */
+  .match-section {
+    height: auto;
+  }
+  .match {
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+  }
+  .team-1,
+  .team-2,
+  .vs {
+    align-self: center;
   }
 
   /* footer section */
