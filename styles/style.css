@@ -249,6 +249,7 @@ nav ul li {
   display: flex;
   justify-content: center;
   align-items: center;
+  align-self: center;
   color: grey;
   width: 30px;
   height: 30px;
@@ -350,6 +351,7 @@ for Phone screen min screen size 688px
   /* match section */
   .match-section {
     height: auto;
+    background-image: linear-gradient(to bottom, #68a7dd, #079548);
   }
   .match {
     flex-direction: column;
